@@ -115,7 +115,7 @@
     
     
     /* HSF添加 */
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(k_scrollEnableOf_collectionViewACTION:) name:@"k_scrollEnableOf_collectionView" object:nil];
+//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(k_scrollEnableOf_collectionViewACTION:) name:@"k_scrollEnableOf_collectionView" object:nil];
     
 }
 -(void)k_scrollEnableOf_collectionViewACTION:(NSNotification *)sender{
@@ -228,7 +228,7 @@
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     /* HSF添加 */
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"k_scrollEnableOf_baseTable" object:nil userInfo:@{@"scrollEnable":@NO}];
+//    [[NSNotificationCenter defaultCenter] postNotificationName:@"k_scrollEnableOf_baseTable" object:nil userInfo:@{@"scrollEnable":@NO}];
     
     
     
@@ -276,7 +276,7 @@
     
     
     /* HSF添加 */
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"k_scrollEnableOf_baseTable" object:nil userInfo:@{@"scrollEnable":@YES}];
+//    [[NSNotificationCenter defaultCenter] postNotificationName:@"k_scrollEnableOf_baseTable" object:nil userInfo:@{@"scrollEnable":@YES}];
     
 }
 
@@ -292,7 +292,7 @@
     }
     
     /* HSF添加 */
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"k_scrollEnableOf_baseTable" object:nil userInfo:@{@"scrollEnable":@YES}];
+//    [[NSNotificationCenter defaultCenter] postNotificationName:@"k_scrollEnableOf_baseTable" object:nil userInfo:@{@"scrollEnable":@YES}];
 }
 
 

@@ -38,8 +38,8 @@
     //通知
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changeVCScrollState:) name:@"changeVCScrollState" object:nil];
     
-    /* HSF添加 */
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(k_scrollEnableOf_baseTableACTION:) name:@"k_scrollEnableOf_baseTable" object:nil];
+//    /* HSF添加 */
+//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(k_scrollEnableOf_baseTableACTION:) name:@"k_scrollEnableOf_baseTable" object:nil];
 }
 
 
@@ -130,10 +130,10 @@
         
         self.tableView.showsVerticalScrollIndicator = _canScroll?YES:NO;
     }
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"k_scrollEnableOf_collectionView" object:nil userInfo:@{@"scrollEnable":@NO}];
+//    [[NSNotificationCenter defaultCenter] postNotificationName:@"k_scrollEnableOf_collectionView" object:nil userInfo:@{@"scrollEnable":@NO}];
 }
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"k_scrollEnableOf_collectionView" object:nil userInfo:@{@"scrollEnable":@YES}];
+//    [[NSNotificationCenter defaultCenter] postNotificationName:@"k_scrollEnableOf_collectionView" object:nil userInfo:@{@"scrollEnable":@YES}];
     
 }
 
